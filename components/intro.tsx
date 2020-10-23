@@ -1,18 +1,23 @@
-import { CMS_NAME } from '../lib/constants';
+import Link from 'next/link';
 
 const Intro = () => {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-6xl md:text-xl font-bold tracking-tighter leading-tight md:pr-8">
-        Home
-      </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Thoughts
+    <section className="flex flex-row mb-8 mt-4">
+      <h4 className="text-center text-lg">
+        <Link href="/">
+          <a className="hover:underline">Thoughts</a>
+        </Link>
       </h4>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Projects
+      <h4 className="text-center text-lg pl-6">
+      <Link href="/projects">
+          <a className="hover:underline">Projects</a>
+        </Link>
       </h4>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">About</h4>
+      <h4 className="text-center text-lg pl-6">
+      <Link href="/about">
+          <a className="hover:underline">About</a>
+        </Link>
+      </h4>
     </section>
   );
 };

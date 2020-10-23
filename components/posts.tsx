@@ -5,10 +5,10 @@ type Props = {
   posts: Post[];
 };
 
-const MoreStories = ({ posts }: Props) => {
+const Posts = ({ posts }: Props) => {
   return (
     <section>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+      <div className="grid grid-cols-1 row-gap-8">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
@@ -25,4 +25,4 @@ const MoreStories = ({ posts }: Props) => {
   );
 };
 
-export default MoreStories;
+export default Posts;

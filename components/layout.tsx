@@ -1,4 +1,3 @@
-import Alert from './alert';
 import Footer from './footer';
 import Meta from './meta';
 import Intro from '../components/intro';
@@ -11,8 +10,8 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Meta />
-      <Intro />
-      <div className="min-h-screen">
+      <div className="min-h-screen container mx-auto px-5 max-w-4xl">
+        <Intro />
         <main>{children}</main>
       </div>
       <Footer />
