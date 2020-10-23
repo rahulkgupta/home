@@ -8,12 +8,12 @@ const Intro = () => {
           <a className="hover:underline">Thoughts</a>
         </Link>
       </h4>
-      <h4 className="text-center text-lg pl-6">
+      <h4 className="text-center text-lg pl-4">
       <Link href="/projects">
           <a className="hover:underline">Projects</a>
         </Link>
       </h4>
-      <h4 className="text-center text-lg pl-6">
+      <h4 className="text-center text-lg pl-4">
       <Link href="/about">
           <a className="hover:underline">About</a>
         </Link>
